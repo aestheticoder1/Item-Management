@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.6) !important;
+}

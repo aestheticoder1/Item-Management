@@ -1,0 +1,31 @@
+# --- Root ---
+node_modules/
+.env
+.DS_Store
+dist/
+build/
+*.log
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# Vite/React specific
+frontend/.vite/
+frontend/.cache/
+frontend/.eslintcache
+
+# --- Backend ---
+backend/node_modules/
+backend/.env
+backend/.DS_Store
+backend/logs/
+backend/*.log
+
+# Optional IDE/editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
