@@ -13,7 +13,7 @@ export default function ItemDetails() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/api/items/${id}`)
+            .get(`https://item-management-q3re.vercel.app/api/items/${id}`)
             .then((res) => {
                 setItem(res.data);
                 setLoading(false);
@@ -27,7 +27,7 @@ export default function ItemDetails() {
     const handleEnquire = async () => {
         setSending(true);
         try {
-            await axios.post("http://localhost:5000/api/enquire", {
+            await axios.post("https://item-management-q3re.vercel.app/api/enquire", {
                 name: item.name,
                 type: item.type,
                 description: item.description,

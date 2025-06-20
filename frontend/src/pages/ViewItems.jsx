@@ -9,7 +9,7 @@ export default function ViewItems() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/api/items")
+            .get("https://item-management-q3re.vercel.app/api/items")
             .then(res => setItems(res.data))
             .catch(err => console.error("Error fetching items:", err))
             .finally(() => setLoading(false)); // Turn off loader after fetch

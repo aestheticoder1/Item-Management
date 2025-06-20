@@ -45,7 +45,7 @@ export default function AddItem() {
                     images: additionalImagesBase64,
                 };
 
-                axios.post("http://localhost:5000/api/items", newItem)
+                axios.post("https://item-management-q3re.vercel.app/api/items", newItem)
                     .then(() => {
                         toast.success("✅ Item successfully added!");
                         setTimeout(() => navigate("/view"), 1200);
